@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Positioning Demonstration</h1>
+        <p>Understanding different CSS position properties</p>
+    </header>
+
+    <nav>
+        <a href="#static">Static</a>
+        <a href="#relative">Relative</a>
+        <a href="#absolute">Absolute</a>
+        <a href="#fixed">Fixed</a>
+        <a href="#sticky">Sticky</a>
+    </nav>
+
+    <main>
+
+        <section id="static">
+            <h2>1. Static Position</h2>
+            <div class="static-box">Static Element</div>
+            <p>Static is the default position of HTML elements.</p>
+        </section>
+
+        <section id="relative">
+            <h2>2. Relative Position</h2>
+            <div class="relative-box">Relative Element</div>
+            <p>The element is moved relative to its normal position.</p>
+        </section>
+
+        <section id="absolute">
+            <h2>3. Absolute Position</h2>
+            <div class="parent-box">
+                Parent Element
+                <div class="absolute-box">Absolute Element</div>
+            </div>
+            <p>The absolute element is positioned relative to its nearest positioned ancestor.</p>
+        </section>
+
+        <section id="fixed">
+            <h2>4. Fixed Position</h2>
+            <p>The circular button at the bottom-right stays in the same place while scrolling.</p>
+        </section>
+
+        <section id="sticky">
+            <h2>5. Sticky Position</h2>
+            <p>The navigation bar at the top sticks while scrolling.</p>
+        </section>
+
+        <section>
+            <h2>6. Z-Index</h2>
+            <div class="z-container">
+                <div class="z-box box-one">Box 1</div>
+                <div class="z-box box-two">Box 2</div>
+            </div>
+        </section>
+
+    </main>
+
+    <a href="#" class="fixed-button">Top</a>
+
+    <footer>
+        <p>Created for P8 - CSS Positioning</p>
+    </footer>
+
+</body>
+</html>
