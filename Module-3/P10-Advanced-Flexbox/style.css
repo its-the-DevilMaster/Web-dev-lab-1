@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+}
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.container {
+    display: flex;
+    gap: 10px;
+    background-color: #ddd;
+    padding: 15px;
+    min-height: 100px;
+}
+.box {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.grow-one {
+    flex-grow: 1;
+}
+.grow-two {
+    flex-grow: 2;
+}
+.shrink .box {
+    flex-basis: 250px;
+    flex-shrink: 1;
+}
+.shrink-two {
+    flex-shrink: 2 !important;
+}
+.basis .box {
+    flex-basis: 150px;
+    flex-grow: 1;
+}
+.order-three {
+    order: 3;
+}
+.order-one {
+    order: 1;
+}
+.order-two {
+    order: 2;
+}
+.align {
+    height: 180px;
+}
+.self-start {
+    align-self: flex-start;
+}
+.self-end {
+    align-self: flex-end;
+}
+.shorthand .box:nth-child(1) {
+    flex: 1;
+}
+.shorthand .box:nth-child(2) {
+    flex: 2;
+}
+.shorthand .box:nth-child(3) {
+    flex: 1;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        min-width: 100px;
+    }
+}
